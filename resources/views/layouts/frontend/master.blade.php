@@ -7,108 +7,23 @@
 		<meta name="robots" content="noindex, nofollow">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+		<link rel="stylesheet" href="{{asset('/assets/css/bootstrap.min.css')}}">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
 		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 		<!-- <link rel="stylesheet" href="/assets/css/all.min.css"> -->
-		<link rel="stylesheet" href="/assets/css/style.css">
-		<link rel="stylesheet" href="/assets/css/fancybox.css">
-		<link rel="stylesheet" href="/assets/css/slick.min.css">
-		<link rel="stylesheet" href="/assets/css/slick-theme.css">
+		<link rel="stylesheet" href="{{asset('/assets/css/style.css')}}">
+		<link rel="stylesheet" href="{{asset('/assets/css/fancybox.css')}}">
+		<link rel="stylesheet" href="{{asset('/assets/css/slick.min.css')}}">
+		<link rel="stylesheet" href="{{asset('/assets/css/slick-theme.css')}}">
 <!-- Meta -->
-<title>Web Development Pros - Home</title>
+<title>{{config('app.name')}}</title>
 </head>
 <body>
 <!-- Header -->
-<header>
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-lg-4 ">
-				<!-- Menu -->
+    @component('layouts.frontend.components.header')
 
-				<nav class="main-menu">
-					<div class="row">
-						<div class="col-md-5">
-							<ul id="nav1" class="menu">
-								<li><a href="/"><img src="/assets/images/footer-logo.png" alt=""></a></li>
-								<li><a href="/about">About us</a></li>
-								<li><a href="/services">Services</a>
-								<ul class="list-unstyled ">
-									<li><a href="/b2b">B2B</a></li>
-									<li><a href="/cms">CMS</a></li>
-									<li><a href="/ecommerce">Ecommerce</a></li>
-									<li><a href="/custom-website/">Custom Website Development</a></li>
-								</ul>
-							</li>
-							<li><a href="/portfolio">Portfolio</a></li>
-							<li><a href="/contact">Contact Us</a></li>
-						</ul>
-					</div>
-					<div class="col-md-7">
-						<h5>Locations</h5>
-						<ul class="contact-loc">
-							<li>
-								<h6>USA</h6>
-								<p>1910 Pacific Ave Suite # 8025, Dallas, TX 75201 <br> United States</p>
-							</li>
-							<li>
-								<h6>UK</h6>
-								<p>Kemp House, 160 City Road, London, EC1V 2NX, <br> United Kingdom</p>
-							</li>
-							<li>
-								<h6>China</h6>
-								<p>696 Weihai Road, Jing'an District, Shanghai, <br> China.</p>
-							</li>
-							<li>
-								<h6>UAE</h6>
-								<p>DMCC, Jumeirah Lakes Tower, Sheikh Zayed Road- Dubai, 22313, <br> United Arab Emirates</p>
-							</li>
-							<li>
-								<h6>Pakistan</h6>
-								<p>Office # 01, Plot D-18, <br> The Residence, Block08, Khaliq-uz-Zaman Road, <br> Clifton, Karachi.</p>
-							</li>
-						</ul>
-						<ul class="contact-us-col1">
-							<li>
-								<span>Phone Number</span> 4233 8292 21
-							</li>
-							<li>
-								<span>Work Email</span> support@info.com
-							</li>
-						</ul>
-					</div>
-				</div>
-			</nav>
-			<!-- Menu -->
-			<div class="btn-get">
-				<a href="#" class="btn btn-simple loginUp">get a free quote</a>
-			</div>
-		</div>
-		<div class="col-lg-4 dis-flex text-center">
-			<div class="logo">
-				<a href="/"><img src="/assets/images/header-logo.png" class="img-fluid" alt=""></a>
-			</div>
-		</div>
-		<div class="col-lg-4 dis-flex-end">
-			<div class="social-icons">
-				<ul class="list-unstyled">
-					<li class="list-inline-item"><a href=""><i class="fab fa-instagram"></i></a></li>
-					<li class="list-inline-item"><a href=""><i class="fab fa-facebook-f"></i></a></li>
-					<li class="list-inline-item"><a href=""><i class="fab fa-behance"></i></a></li>
-					<li class="list-inline-item"><a href=""><i class="fab fa-linkedin-in"></i></a></li>
-					<li class="list-inline-item"><a href=""><i class="fab fa-twitter"></i></a></li>
-				</ul>
-			</div>
-			<a href="javascript:" class="menu-bottom">
-				<span></span>
-				<span></span>
-				<span></span>
-			</a>
-		</div>
-	</div>
-</div>
-</header>
+    @endcomponent
 <!-- Header -->
 <!-- Main Banner -->
 <section class="banner">
